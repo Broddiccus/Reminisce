@@ -8,6 +8,7 @@ public class GrabCollider : MonoBehaviour
     public GameObject Block;
     public GameObject CarriedBlock;
     public bool canGrab = false;
+    public bool canTalk = false;
     public void ChangeDirections(Vector2 dir)
     {
         if (dir[1] == 1)
@@ -29,19 +30,29 @@ public class GrabCollider : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("butts");
         if (other.tag == "Block")
         {
             
             canGrab = true;
+            canTalk = false;
+            Block = other.gameObject;
+        }
+        if (other.tag == "Interactable")
+        {
+            canTalk = true;
+            canGrab = false;
             Block = other.gameObject;
         }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject == Block)
+        if (other.gameObject == Block && canGrab)
         {
             canGrab = false;
+        }
+        if (other.gameObject == Block && canTalk)
+        {
+            canTalk = false;
         }
     }
     public void GrabTime(bool x)
