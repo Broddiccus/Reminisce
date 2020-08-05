@@ -6,6 +6,7 @@ using Bolt;
 
 public class DialogueManager : MonoBehaviour
 {
+    private string eventId;
     private Queue<string> names;
     private Queue<string> sentences;
     private Queue<Sprite> portraits;
@@ -17,17 +18,25 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        EventManager.current.onDialogueTriggerEvent += DialogueEvent;
         sentences = new Queue<string>();
         portraits = new Queue<Sprite>();
         names = new Queue<string>();
     }
-
+    private void DialogueEvent(string id)
+    {
+        if (id == "bomb")
+        {
+            Variables.Object(GameObject.Find("Player")).Set("CanBomb", true);
+        }
+    }
     public void StartDialogue(Dialogue dialogue)
     {
         popUp.SetBool("Talking", true);
         sentences.Clear();
         portraits.Clear();
         names.Clear();
+        eventId = dialogue.EventId;
 
         foreach(string sentence in dialogue.sentences)
         {
@@ -48,6 +57,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (sentences.Count == 0)
         {
+            
             EndDialogue();
             return;
         }
@@ -74,7 +84,15 @@ public class DialogueManager : MonoBehaviour
     {
         Variables.Object(GameObject.Find("Player")).Set("IsTalking", false);
         popUp.SetBool("Talking", false);
+        if (eventId != "")
+        {
+            EventManager.current.DialogueTriggerEvent(eventId);
+        }
         //end dialogue
+    }
+    private void OnDestroy()
+    {
+        EventManager.current.onDialogueTriggerEvent -= DialogueEvent;
     }
 
 }

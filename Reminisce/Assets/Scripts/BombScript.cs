@@ -28,23 +28,28 @@ public class BombScript : MonoBehaviour
     }
     public void BOOM()
     {
-        gameObject.GetComponent<Collider2D>().enabled = true;
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position,1.0f);
+        foreach(var hit in hitColliders)
+        {
+            if (hit.tag == "Player")
+            {
+                int temp = Convert.ToInt32(Variables.Object(GameObject.Find("Player")).Get("Health"));
+                Variables.Object(GameObject.Find("Player")).Set("Health", temp - 1);
+            }
+            if (hit.tag == "Damagable")
+            {
+                Debug.Log("butts");
+                hit.gameObject.GetComponent<Damage>().Damager(1, "bomb");
+            }
+        }
         //explosion goes here
         StopCoroutine("Boomtime");
-        Debug.Log(Convert.ToBoolean(Variables.Object(GameObject.Find("Player")).Get("HasBlock")));
+        
         if (!Convert.ToBoolean(Variables.Object(GameObject.Find("Player")).Get("HasBlock")))
         {
             Variables.Object(GameObject.Find("Player")).Set("CanBomb", true);
         }
         
         Destroy(gameObject);
-    }
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Player")
-        {
-            Debug.Log("HIT");
-            //apply damage
-        }
     }
 }
