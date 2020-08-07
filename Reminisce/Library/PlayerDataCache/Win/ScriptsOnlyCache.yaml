@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - DialogueTrigger
     - EventManager
     - GrabCollider
+    - KnightBody
     - KnightScript
     - NLocMover
     - SpawnScript
@@ -22,6 +23,8 @@ ScriptsOnlyBuild:
     - Bolt.FlowMacro
     Ludiq.Core.Runtime.dll:
     - Ludiq.DictionaryAsset
+    Ludiq.Graphs.Editor.dll:
+    - Ludiq.GraphWindow
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -171,6 +174,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12258}
     - Class: 114
       Script: {instanceID: 13010}
+    - Class: 114
+      Script: {instanceID: 27484}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -372,7 +377,7 @@ ScriptsOnlyBuild:
     className: TMP_SelectionCaret
   - hash:
       serializedVersion: 2
-      Hash: 97fa03903a245ec08724edebac1e08ae
+      Hash: 2cc3954efc2975d5e314164ca169857f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: KnightScript
@@ -636,7 +641,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 74feece91d3df09e544578968e27f202
+      Hash: d12f43f187efa2da5ff96b647c064759
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GrabCollider
@@ -994,6 +999,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 4922cbaece94e338404f75a30567630d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: KnightBody
   platform: 5
   scenePathNames:
   - Assets/Scenes/Tower.unity

@@ -9,10 +9,11 @@ public class KnightScript : MonoBehaviour
     public SpriteRenderer layering;
     public float range = 2.0f;
     public float speed;
+    public bool cooldown = false;
     private float endTime = 1.0f;
     public int health = 10;
     private int attackState = 0;
-    public enum KState {Idle,Attacking,Dead,Moving };
+    public enum KState {Idle,Attacking,Dead,Moving,Hit };
     public KState state = KState.Idle;
     private bool facing = false;
     private Transform player;
@@ -34,9 +35,21 @@ public class KnightScript : MonoBehaviour
         visuals.SetBool("Moving", false);
         state = KState.Idle;
     }
+    public void DeadEvent()
+    {
+        visuals.SetBool("Dead", true);
+        visuals.SetBool("Dying", false);
+        visuals.SetBool("Hit", false);
+        visuals.SetBool("Attacking", false);
+        visuals.SetBool("Moving", false);
+    }
     // Update is called once per frame
     void Update()
     {
+        if (health <= 0)
+        {
+            state = KState.Dead;
+        }
         if (transform.position.x < player.position.x)
         {
             if (facing)
@@ -69,7 +82,7 @@ public class KnightScript : MonoBehaviour
                 endTime -= Time.deltaTime;
                 if (endTime < 0)
                 {
-                    endTime = 1.0f;
+                    endTime = health/10;
                     state = KState.Moving;
                 }
                 break;
@@ -77,7 +90,7 @@ public class KnightScript : MonoBehaviour
                 visuals.SetBool("Moving", true);
                 if (Vector2.Distance(transform.position,player.position) > range)
                 {
-                    transform.position = Vector2.MoveTowards(transform.position, player.position, speed);
+                    transform.position = Vector2.MoveTowards(transform.position, player.position, speed - (health/100));
                 }
                 if (Vector2.Distance(transform.position, player.position) <= range)
                 {
@@ -99,7 +112,17 @@ public class KnightScript : MonoBehaviour
                 }
                 break;
             case KState.Dead:
-                visuals.SetBool("Dead", true);
+                if (!visuals.GetBool("Dead"))
+                    visuals.SetBool("Dying", true);
+                break;
+            case KState.Hit:
+                if (cooldown)
+                {
+                    health--;
+                    cooldown = false;
+                    visuals.SetBool("Hit", true);
+                }
+                
                 break;
         }
     }
@@ -112,12 +135,5 @@ public class KnightScript : MonoBehaviour
             CustomEvent.Trigger(temp, "Damaged");
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Bullet")
-        {
-            health--;
-
-        }
-    }
+    
 }

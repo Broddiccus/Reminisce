@@ -4,11 +4,26 @@ using UnityEngine;
 
 public class GrabCollider : MonoBehaviour
 {
+    public bool canFire = true;
     [SerializeField] Transform[] Directions;
     public GameObject Block;
     public GameObject CarriedBlock;
     public bool canGrab = false;
     public bool canTalk = false;
+    public void fireCounter()
+    {
+        StartCoroutine("FireCount");
+    }
+    IEnumerator FireCount()
+    {
+        canFire = false;
+        while (!canFire)
+        {
+            yield return new WaitForSeconds(1);
+            canFire = true;
+        }
+        
+    }
     public void ChangeDirections(Vector2 dir)
     {
         if (dir[1] == 1)
