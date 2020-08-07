@@ -63,7 +63,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Attack.cs" />
+    <Compile Include="Assets\KnightScript.cs" />
     <Compile Include="Assets\NLocMover.cs" />
+    <Compile Include="Assets\Scripts\AnimEventScript.cs" />
     <Compile Include="Assets\Scripts\Blocks.cs" />
     <Compile Include="Assets\Scripts\BombScript.cs" />
     <Compile Include="Assets\Scripts\Damage.cs" />
@@ -74,6 +76,7 @@
     <Compile Include="Assets\Scripts\EventManager.cs" />
     <Compile Include="Assets\Scripts\GrabCollider.cs" />
     <Compile Include="Assets\Scripts\SpawnScript.cs" />
+    <Compile Include="Assets\TutScript.cs" />
     <None Include="Assets\Ludiq\Ludiq.Core\DotNetDocumentation\System.Web.Extensions.Design.xml" />
     <None Include="Assets\Ludiq\Ludiq.Core\DotNetDocumentation\Microsoft.Build.Engine.xml" />
     <None Include="Assets\Ludiq\Bolt\Documentation\0. READ ME FIRST.txt" />

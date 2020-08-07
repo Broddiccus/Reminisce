@@ -8,6 +8,7 @@ TagManager:
   - Block
   - Interactable
   - Damagable
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -47,4 +48,7 @@ TagManager:
     locked: 0
   - name: Blocks
     uniqueID: 2913602375
+    locked: 0
+  - name: Boss
+    uniqueID: 3802713835
     locked: 0

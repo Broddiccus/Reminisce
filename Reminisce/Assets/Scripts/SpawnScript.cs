@@ -5,17 +5,24 @@ using UnityEngine;
 public class SpawnScript : MonoBehaviour
 {
     public string eventType;
-    public GameObject spawnPart;
+    public GameObject[] spawnPart;
     private void Start()
     {
-        spawnPart.SetActive(false);
+        foreach (GameObject x in spawnPart)
+        {
+            x.SetActive(false);
+        }
+        
         EventManager.current.onDialogueTriggerEvent += DialogueEvent;
     }
     private void DialogueEvent(string id)
     {
         if (id == eventType)
         {
-            spawnPart.SetActive(true);
+            foreach (GameObject x in spawnPart)
+            {
+                x.SetActive(true);
+            }
         }
     }
     private void OnDestroy()

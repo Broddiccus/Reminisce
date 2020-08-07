@@ -23,8 +23,6 @@ public class NLocMover : MonoBehaviour
         playery = GameObject.Find("Player").GetComponent<Animator>().GetInteger("Directiony");
         self.SetInteger("Directionx", playerx);
         self.SetInteger("Directiony", playery);
-        Debug.Log(playerx);
-        Debug.Log(playery);
         if (playerx == 1)
         {
             transform.localPosition = Vector2.Lerp(transform.localPosition,locations[3].localPosition,  0.01f);
