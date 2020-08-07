@@ -4,20 +4,19 @@ using UnityEngine;
 
 public class CameraEventScript : MonoBehaviour
 {
+    public Transform followLoc;
     public float speed;
+    public Transform Destination;
+    public void Awake()
+    {
+        Destination = followLoc;
+    }
     public void Mover(Transform end)
     {
-        StopAllCoroutines();
-        StartCoroutine("MoveCam", end);
+        Destination = end;
     }
-    IEnumerator MoveCam(Transform end)
+    public void Update()
     {
-        float dist = Vector2.Distance(transform.position, end.position);
-        while (dist > 0)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, end.position, speed * Time.deltaTime);
-            yield return null;
-        }
-        yield return null;
+        transform.position = Vector3.Lerp(transform.position, Destination.position, speed * Time.deltaTime);
     }
 }

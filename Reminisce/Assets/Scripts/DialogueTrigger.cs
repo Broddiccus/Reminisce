@@ -5,7 +5,7 @@ using Bolt;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public Transform camMoveLoc;
+    
     public Dialogue dialogue;
     public bool oneTime = false;
     public bool Examine = true;
@@ -14,7 +14,6 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (Active)
         {
-            EventManager.current.onDialogueTriggerEvent += DialogueEvent;
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
             Variables.Object(GameObject.Find("Player")).Set("IsTalking", true);
             if (oneTime)
@@ -35,19 +34,5 @@ public class DialogueTrigger : MonoBehaviour
         }
         
     }
-    private void DialogueEvent(string id)
-    {
-        if (id == "BossEntrance")
-        {
-            GameObject.Find("Camera").GetComponent<CameraEventScript>().Mover(camMoveLoc);
-        }
-        if (id == "BossEntEnd")
-        {
-            GameObject.Find("Camera").GetComponent<CameraEventScript>().Mover(GameObject.Find("CamReturn").GetComponent<Transform>());
-        }
-    }
-    private void OnDestroy()
-    {
-        EventManager.current.onDialogueTriggerEvent -= DialogueEvent;
-    }
+    
 }

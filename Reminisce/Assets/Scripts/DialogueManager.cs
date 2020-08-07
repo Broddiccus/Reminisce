@@ -6,6 +6,7 @@ using Bolt;
 
 public class DialogueManager : MonoBehaviour
 {
+    private Transform camMoveLoc;
     private string[] eventId;
     private Queue<string> names;
     private Queue<string> sentences;
@@ -30,9 +31,20 @@ public class DialogueManager : MonoBehaviour
         {
             Variables.Object(GameObject.Find("Player")).Set("CanBomb", true);
         }
+        if (id == "BossEntrance")
+        {
+            GameObject.Find("Camera").GetComponent<CameraEventScript>().Mover(camMoveLoc);
+        }
+        if (id == "BossEntEnd")
+        {
+            GameObject.Find("Camera").GetComponent<CameraEventScript>().Mover(GameObject.Find("CamReturn").GetComponent<Transform>());
+            GameObject.Find("Knight").GetComponent<KnightScript>().battleStart = true;
+        }
+        
     }
     public void StartDialogue(Dialogue dialogue)
     {
+        camMoveLoc = dialogue.camMoveLoc;
         popUp.SetBool("Talking", true);
         sentences.Clear();
         portraits.Clear();
@@ -58,11 +70,12 @@ public class DialogueManager : MonoBehaviour
     {
         for (int i = 0; i < eventLoc.Length; i++)
         {
-            eventLoc[i]--;
-            if (eventLoc[i] == -1 && eventId[i] != "")
+            
+            if (eventLoc[i] == 0 && eventId[i] != "")
             {
                 EventManager.current.DialogueTriggerEvent(eventId[i]);
             }
+            eventLoc[i]--;
         }
         
         if (sentences.Count == 0)
