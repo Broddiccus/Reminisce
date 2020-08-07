@@ -13,6 +13,7 @@ ScriptsOnlyBuild:
     - KnightScript
     - NLocMover
     - SpawnScript
+    - TitleScript
     - TutScript
     Bolt.Core.Runtime.dll:
     - Bolt.SceneVariables
@@ -23,8 +24,6 @@ ScriptsOnlyBuild:
     - Bolt.FlowMacro
     Ludiq.Core.Runtime.dll:
     - Ludiq.DictionaryAsset
-    Ludiq.Graphs.Editor.dll:
-    - Ludiq.GraphWindow
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -36,10 +35,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -48,6 +45,7 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.HorizontalLayoutGroup
@@ -98,11 +96,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12076}
     - Class: 114
-      Script: {instanceID: 12552}
+      Script: {instanceID: 12554}
     - Class: 114
-      Script: {instanceID: 12864}
+      Script: {instanceID: 12866}
     - Class: 114
-      Script: {instanceID: 13266}
+      Script: {instanceID: 13268}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -171,11 +169,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12076}
     - Class: 114
-      Script: {instanceID: 12258}
+      Script: {instanceID: 12172}
     - Class: 114
-      Script: {instanceID: 13010}
+      Script: {instanceID: 12260}
     - Class: 114
-      Script: {instanceID: 27484}
+      Script: {instanceID: 13012}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -240,13 +238,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12076}
     - Class: 114
-      Script: {instanceID: 12258}
+      Script: {instanceID: 12260}
     - Class: 114
-      Script: {instanceID: 13010}
+      Script: {instanceID: 13012}
     - Class: 114
-      Script: {instanceID: 13070}
+      Script: {instanceID: 13072}
     - Class: 114
-      Script: {instanceID: 13320}
+      Script: {instanceID: 13322}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -264,6 +262,57 @@ ScriptsOnlyBuild:
     - Class: 483693784
       Script: {instanceID: 0}
     - Class: 1839735485
+      Script: {instanceID: 0}
+    Assets/Scenes/Title.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11212}
+    - Class: 114
+      Script: {instanceID: 11396}
+    - Class: 114
+      Script: {instanceID: 11436}
+    - Class: 114
+      Script: {instanceID: 11654}
+    - Class: 114
+      Script: {instanceID: 11896}
+    - Class: 114
+      Script: {instanceID: 12322}
+    - Class: 114
+      Script: {instanceID: 12866}
+    - Class: 114
+      Script: {instanceID: 13268}
+    - Class: 114
+      Script: {instanceID: 27316}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Tower.unity:
     - Class: 1
@@ -311,8 +360,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11652}
     - Class: 114
-      Script: {instanceID: 11654}
-    - Class: 114
       Script: {instanceID: 11896}
     - Class: 114
       Script: {instanceID: 12070}
@@ -321,21 +368,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12076}
     - Class: 114
-      Script: {instanceID: 12258}
+      Script: {instanceID: 12260}
     - Class: 114
-      Script: {instanceID: 12314}
+      Script: {instanceID: 12316}
     - Class: 114
-      Script: {instanceID: 12864}
+      Script: {instanceID: 12866}
     - Class: 114
-      Script: {instanceID: 13010}
+      Script: {instanceID: 13012}
     - Class: 114
-      Script: {instanceID: 13148}
+      Script: {instanceID: 13150}
     - Class: 114
-      Script: {instanceID: 13266}
+      Script: {instanceID: 13268}
     - Class: 114
-      Script: {instanceID: 13302}
+      Script: {instanceID: 13304}
     - Class: 114
-      Script: {instanceID: 13320}
+      Script: {instanceID: 13322}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -677,6 +724,12 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: 4922cbaece94e338404f75a30567630d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: KnightBody
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1001,12 +1054,13 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 4922cbaece94e338404f75a30567630d
+      Hash: 24bde994444601e602ed2c7e34efb76c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: KnightBody
+    className: TitleScript
   platform: 5
   scenePathNames:
+  - Assets/Scenes/Title.unity
   - Assets/Scenes/Tower.unity
   - Assets/Scenes/Boss.unity
   - Assets/BoltKit_TopDown/Scenes/GUI.unity

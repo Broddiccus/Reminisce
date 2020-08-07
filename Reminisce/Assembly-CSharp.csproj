@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\NLocMover.cs" />
     <Compile Include="Assets\Scripts\SpawnScript.cs" />
     <Compile Include="Assets\Scripts\TutScript.cs" />
+    <Compile Include="Assets\TitleScript.cs" />
     <None Include="Assets\Ludiq\Ludiq.Core\DotNetDocumentation\System.Web.Extensions.Design.xml" />
     <None Include="Assets\Ludiq\Ludiq.Core\DotNetDocumentation\Microsoft.Build.Engine.xml" />
     <None Include="Assets\Ludiq\Bolt\Documentation\0. READ ME FIRST.txt" />
