@@ -6,6 +6,7 @@ using Bolt;
 public class KnightScript : MonoBehaviour
 {
     public Animator visuals;
+    public bool battleStart = false;
     public SpriteRenderer layering;
     public float range = 2.0f;
     public float speed;
@@ -80,7 +81,7 @@ public class KnightScript : MonoBehaviour
             case KState.Idle:
                 
                 endTime -= Time.deltaTime;
-                if (endTime < 0)
+                if (endTime < 0 && battleStart)
                 {
                     endTime = health/10;
                     state = KState.Moving;
@@ -90,7 +91,7 @@ public class KnightScript : MonoBehaviour
                 visuals.SetBool("Moving", true);
                 if (Vector2.Distance(transform.position,player.position) > range)
                 {
-                    transform.position = Vector2.MoveTowards(transform.position, player.position, speed - (health/100));
+                    transform.position = Vector2.MoveTowards(transform.position, player.position, (speed - (health/10)) * Time.deltaTime);
                 }
                 if (Vector2.Distance(transform.position, player.position) <= range)
                 {

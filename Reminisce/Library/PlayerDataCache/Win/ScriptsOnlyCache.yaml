@@ -24,7 +24,10 @@ ScriptsOnlyBuild:
     - Bolt.FlowMacro
     Ludiq.Core.Runtime.dll:
     - Ludiq.DictionaryAsset
+    Ludiq.Graphs.Editor.dll:
+    - Ludiq.GraphWindow
     Unity.2D.Tilemap.Editor.dll:
+    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
@@ -35,8 +38,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -100,7 +105,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12866}
     - Class: 114
-      Script: {instanceID: 13268}
+      Script: {instanceID: 13270}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -228,6 +233,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 630}
     - Class: 114
+      Script: {instanceID: 11446}
+    - Class: 114
       Script: {instanceID: 11648}
     - Class: 114
       Script: {instanceID: 11652}
@@ -242,9 +249,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13012}
     - Class: 114
-      Script: {instanceID: 13072}
+      Script: {instanceID: 13074}
     - Class: 114
-      Script: {instanceID: 13322}
+      Script: {instanceID: 13324}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -295,9 +302,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12866}
     - Class: 114
-      Script: {instanceID: 13268}
+      Script: {instanceID: 13066}
     - Class: 114
-      Script: {instanceID: 27316}
+      Script: {instanceID: 13270}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -376,13 +383,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13012}
     - Class: 114
-      Script: {instanceID: 13150}
+      Script: {instanceID: 13152}
     - Class: 114
-      Script: {instanceID: 13268}
+      Script: {instanceID: 13270}
     - Class: 114
-      Script: {instanceID: 13304}
+      Script: {instanceID: 13306}
     - Class: 114
-      Script: {instanceID: 13322}
+      Script: {instanceID: 13324}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -424,7 +431,7 @@ ScriptsOnlyBuild:
     className: TMP_SelectionCaret
   - hash:
       serializedVersion: 2
-      Hash: 2cc3954efc2975d5e314164ca169857f
+      Hash: 4d8f233511f61f55788227ed4ac8cf5f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: KnightScript
@@ -934,6 +941,12 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
+      Hash: 24bde994444601e602ed2c7e34efb76c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TitleScript
+  - hash:
+      serializedVersion: 2
       Hash: f8516725dee720f5522fed7d82709bb2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1052,12 +1065,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 24bde994444601e602ed2c7e34efb76c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TitleScript
   platform: 5
   scenePathNames:
   - Assets/Scenes/Title.unity
