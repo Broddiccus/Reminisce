@@ -66,7 +66,7 @@ public class DialogueManager : MonoBehaviour
         Sprite portrait = portraits.Dequeue();
 
         nameUI.text = name;
-        StopCoroutine("TypeSentence");
+        StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
         portraitUI.sprite = portrait;
     }
