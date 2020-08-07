@@ -27,6 +27,13 @@ public class KnightScript : MonoBehaviour
         visuals.SetBool("Moving", false);
         state = KState.Idle;
     }
+    public void HitEvent()
+    {
+        visuals.SetBool("Hit", false);
+        visuals.SetBool("Attacking", false);
+        visuals.SetBool("Moving", false);
+        state = KState.Idle;
+    }
     // Update is called once per frame
     void Update()
     {
