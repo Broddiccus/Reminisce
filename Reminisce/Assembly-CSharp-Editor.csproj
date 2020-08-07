@@ -62,7 +62,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Install Bolt\Editor\InstallBoltMenuItem.cs" />
+    <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Custom2DColliders\Editor\EllipseCollider2D_Editor.cs" />
+    <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Editor\GeneralUtils\ImportUtils.cs" />
+    <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Editor\GeneralUtils\MatrixExtensions.cs" />
+    <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Editor\GeneralUtils\TransformExtensions.cs" />
+    <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Editor\ITilemapImportOperation.cs" />
+    <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Editor\ImportOperations\CustomImporterSetLayer.cs" />
+    <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Editor\ImportOperations\CustomImporterSetTag.cs" />
+    <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Editor\ImportOperations\CustomImporterSpawnPrefabsOnTiles.cs" />
+    <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Editor\ImportedTemplate.cs" />
+    <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Editor\ImportedTile.cs" />
+    <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Editor\ImportedTileset.cs" />
+    <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Editor\LayerImporters\ImageLayerImporter.cs" />
+    <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Editor\LayerImporters\ObjectLayerImporter.cs" />
+    <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Editor\LayerImporters\TileLayerImporter.cs" />
+    <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Editor\TMXTypes.cs" />
+    <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Editor\TSXTypes.cs" />
+    <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Editor\TXTypes.cs" />
+    <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Editor\TiledTMXImporter.cs" />
+    <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Editor\TiledTMXImporterWindow.cs" />
+    <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Editor\TiledTSXImporter.cs" />
+    <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Editor\TiledTXImporter.cs" />
+    <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Editor\TiledUtils.cs" />
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>D:/Projects/GameJam/Github/Reminisce/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
@@ -89,6 +110,9 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>D:/Projects/GameJam/Github/Reminisce/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>D:/Projects/GameJam/Github/Reminisce/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>D:/Projects/GameJam/Github/Reminisce/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>

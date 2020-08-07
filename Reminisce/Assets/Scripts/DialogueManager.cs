@@ -6,7 +6,7 @@ using Bolt;
 
 public class DialogueManager : MonoBehaviour
 {
-    private string eventId;
+    private string[] eventId;
     private Queue<string> names;
     private Queue<string> sentences;
     private Queue<Sprite> portraits;
@@ -14,6 +14,7 @@ public class DialogueManager : MonoBehaviour
     public Text nameUI;
     public Text sentenceUI;
     public Image portraitUI;
+    private int[] eventLoc;
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +38,7 @@ public class DialogueManager : MonoBehaviour
         portraits.Clear();
         names.Clear();
         eventId = dialogue.EventId;
-
+        eventLoc = dialogue.eventloc;
         foreach(string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
@@ -55,6 +56,15 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
+        for (int i = 0; i < eventLoc.Length; i++)
+        {
+            eventLoc[i]--;
+            if (eventLoc[i] == -1 && eventId[i] != "")
+            {
+                EventManager.current.DialogueTriggerEvent(eventId[i]);
+            }
+        }
+        
         if (sentences.Count == 0)
         {
             
@@ -84,10 +94,6 @@ public class DialogueManager : MonoBehaviour
     {
         Variables.Object(GameObject.Find("Player")).Set("IsTalking", false);
         popUp.SetBool("Talking", false);
-        if (eventId != "")
-        {
-            EventManager.current.DialogueTriggerEvent(eventId);
-        }
         //end dialogue
     }
     private void OnDestroy()

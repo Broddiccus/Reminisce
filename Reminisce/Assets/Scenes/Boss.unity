@@ -393,6 +393,300 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1487865501}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1599882405
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2140567611}
+    m_Modifications:
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.portraits.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.names.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.EventId.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.eventloc.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.portraits.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: e9bda4c3d6eb7cf4ea277fbaeee432ec,
+        type: 3}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.portraits.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: e9bda4c3d6eb7cf4ea277fbaeee432ec,
+        type: 3}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.portraits.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: e9bda4c3d6eb7cf4ea277fbaeee432ec,
+        type: 3}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.portraits.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: e9bda4c3d6eb7cf4ea277fbaeee432ec,
+        type: 3}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.portraits.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 41d2b04466cf436419661ff8904da59b,
+        type: 3}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.portraits.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: d8333ecc7dc3667428e0cecb4e514f68,
+        type: 3}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.portraits.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: d8333ecc7dc3667428e0cecb4e514f68,
+        type: 3}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.portraits.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: f56a71637fb62a7498554907e5599487,
+        type: 3}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.names.Array.data[0]
+      value: Knight
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.names.Array.data[1]
+      value: Rowan
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.names.Array.data[2]
+      value: Rowan
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.names.Array.data[3]
+      value: Knight
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.names.Array.data[4]
+      value: Knight
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.names.Array.data[5]
+      value: Rowan
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.names.Array.data[6]
+      value: Knight
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.names.Array.data[7]
+      value: Juniper
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: 'Hm, you''re back. I thought I might have to put down a rebellion. Not
+        that the ants outside would dare.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: They don't have to.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: I'll make sure of that!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: What, with a relic you're barely strong enough to get a spark out of?
+        A handful of trinkets you stole from me? You should have stayed hiding in
+        that wretched forest and counted your blessings.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: You stupid little worm, meddling with forces too grand for you to control.
+        Give me the wand- I'm the only one alive fit to be its heir.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[5]
+      value: Come and take it from me!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[6]
+      value: For that insolence, I will. I should thank you for the delivery.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[7]
+      value: Watch out!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.EventId
+      value: '"BossEntrance"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: oneTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: Examine
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.EventId.Array.data[0]
+      value: BossEntrance
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.EventId.Array.data[1]
+      value: BossEntEnd
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812872, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: dialogue.eventloc.Array.data[1]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812873, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812873, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812873, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812873, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812873, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812873, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812873, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812873, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812873, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812873, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812873, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812874, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 1.6634941
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812874, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 10.466248
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812874, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 3.7718878
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812874, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 8.183775
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001457868593812887, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: m_Name
+      value: DialogueTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155905216637044590, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155905216637044590, guid: a1c6f710f391b724da0651eb7b5580cb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.42
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a1c6f710f391b724da0651eb7b5580cb, type: 3}
+--- !u!4 &1599882406 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1001457868593812873, guid: a1c6f710f391b724da0651eb7b5580cb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1599882405}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1654178391
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,7 +744,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 33.153927, y: 15.955223, z: -833.18555}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1599882406}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

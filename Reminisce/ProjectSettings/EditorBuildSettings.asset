@@ -15,9 +15,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Boss.unity
     guid: bfef5e9f82d817345aca5d760dff7028
   - enabled: 1
+    path: Assets/Scenes/Town.unity
+    guid: 515f035f7ed439641ad391dcf965845f
+  - enabled: 1
+    path: Assets/Scenes/Border.unity
+    guid: cc2418351622fb14185603b8198e2bfb
+  - enabled: 1
+    path: Assets/Scenes/Forest.unity
+    guid: 52b318be7e3826140bf3afdd12578c51
+  - enabled: 1
+    path: Assets/Scenes/Origin.unity
+    guid: e9a0900d74888ec4e91460653b03bd90
+  - enabled: 1
     path: Assets/BoltKit_TopDown/Scenes/GUI.unity
     guid: 23bf275cd9834ba46948fe93f3709e29
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Sandbox.unity
     guid: 01a126cbaabbb8749a296617eb8ee3b3
   - enabled: 0
