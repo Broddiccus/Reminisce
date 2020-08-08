@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\CameraEventScript.cs" />
+    <Compile Include="Assets\FadeScript.cs" />
     <Compile Include="Assets\GamingGarrison\2DTools\PixelPerfectFollowCamera.cs" />
     <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Custom2DColliders\CustomCollider2D.cs" />
     <Compile Include="Assets\GamingGarrison\TiledTMXImporter\Custom2DColliders\EllipseCollider2D.cs" />
