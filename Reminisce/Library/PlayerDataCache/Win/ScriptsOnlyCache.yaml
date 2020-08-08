@@ -26,8 +26,6 @@ ScriptsOnlyBuild:
     - Ludiq.DictionaryAsset
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
-    - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
@@ -262,6 +260,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 4
       Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
     - Class: 28
@@ -277,6 +277,8 @@ ScriptsOnlyBuild:
     - Class: 62
       Script: {instanceID: 0}
     - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -300,6 +302,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12286}
     - Class: 114
       Script: {instanceID: 13060}
+    - Class: 114
+      Script: {instanceID: 13118}
+    - Class: 114
+      Script: {instanceID: 13378}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
