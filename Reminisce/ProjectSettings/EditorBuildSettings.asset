@@ -15,9 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Boss.unity
     guid: bfef5e9f82d817345aca5d760dff7028
   - enabled: 1
+    path: Assets/Scenes/Tower2.unity
+    guid: d09a66753f61e2148aea701887fb626d
+  - enabled: 1
     path: Assets/Scenes/Town.unity
     guid: 515f035f7ed439641ad391dcf965845f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Border.unity
     guid: cc2418351622fb14185603b8198e2bfb
   - enabled: 1
