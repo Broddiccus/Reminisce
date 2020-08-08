@@ -43,13 +43,17 @@ public class KnightScript : MonoBehaviour
         visuals.SetBool("Hit", false);
         visuals.SetBool("Attacking", false);
         visuals.SetBool("Moving", false);
+        EventManager.current.DialogueTriggerEvent("BossDead");
     }
     // Update is called once per frame
     void Update()
     {
         if (health <= 0)
         {
+            health = -1;
             state = KState.Dead;
+            
+
         }
         if (transform.position.x < player.position.x)
         {
@@ -113,8 +117,9 @@ public class KnightScript : MonoBehaviour
                 }
                 break;
             case KState.Dead:
-                if (!visuals.GetBool("Dead"))
+                if (!visuals.GetBool("Dead"))   
                     visuals.SetBool("Dying", true);
+                
                 break;
             case KState.Hit:
                 if (cooldown)

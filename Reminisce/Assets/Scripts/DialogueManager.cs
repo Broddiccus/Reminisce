@@ -35,12 +35,16 @@ public class DialogueManager : MonoBehaviour
         {
             GameObject.Find("Camera").GetComponent<CameraEventScript>().Mover(camMoveLoc);
         }
+        if (id == "BombsPlaced")
+        {
+            Variables.Object(GameObject.Find("Player")).Set("CanBomb", false);
+        }
         if (id == "BossEntEnd")
         {
             GameObject.Find("Camera").GetComponent<CameraEventScript>().Mover(GameObject.Find("CamReturn").GetComponent<Transform>());
             GameObject.Find("Knight").GetComponent<KnightScript>().battleStart = true;
         }
-        
+
     }
     public void StartDialogue(Dialogue dialogue)
     {
